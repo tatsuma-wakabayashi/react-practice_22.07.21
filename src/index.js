@@ -5,5 +5,5 @@ const [...arr1] = list;
 
 arr1.map((value) => {
   value.style = "color: red;";
-  return console.log("end");
+  return console.log("finish");
 });
