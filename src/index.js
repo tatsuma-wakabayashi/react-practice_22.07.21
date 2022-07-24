@@ -1,10 +1,16 @@
 import "./styles.css";
 
-const list = document.getElementsByTagName("li");
-const [...arr1] = list;
+// const lists = document.getElementsByClassName("list");
+// const [...newArr] = lists;
 
-const newArr = arr1.map((value) => {
-  return value.textContent;
+const nameArr = ["やまだ", "さとう", "立川", "うんこ"];
+
+const newNameArr = nameArr.map((name) => {
+  if (name === "うんこ") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
 });
 
-console.log(newArr);
+console.log(newNameArr);
